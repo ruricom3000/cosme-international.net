@@ -24,8 +24,8 @@ input[name="slideshow-pc"] {
   user-select: none;
   transition: transform .6s;
   padding: 15px 0;
-  max-height: 550px;
-  height: 150%;
+  max-height: 600px;
+  height: 170%;
 }
 
 .slideContents ul {
