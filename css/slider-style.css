@@ -249,8 +249,8 @@ input[name="slideshow-sp"] {
   -webkit-user-select: none;
   user-select: none;
   transition: transform .6s;
-	max-height: 450px;
-  height: 120%;
+	max-height: 500px;
+  height: 150%;
 }
 
 .slideContents-sp section {
@@ -352,7 +352,31 @@ input[name="slideshow-sp"] {
 }
 
 /* :::::: mechanism :::::: */
-#switch1-sp:checked ~ .slideContents-sp #slide1-sp, #switch2-sp:checked ~ .slideContents-sp #slide2-sp, #switch3-sp:checked ~ .slideContents-sp #slide3-sp, #switch4-sp:checked ~ .slideContents-sp #slide4-sp, #switch5-sp:checked ~ .slideContents-sp #slide5-sp, #switch6-sp:checked ~ .slideContents-sp #slide6-sp, #switch7-sp:checked ~ .slideContents-sp #slide7-sp, #switch8-sp:checked ~ .slideContents-sp #slide8-sp, #switch9-sp:checked ~ .slideContents-sp #slide9-sp, #switch10-sp:checked ~ .slideContents-sp #slide10-sp,#switch11-sp:checked ~ .slideContents-sp #slide11-sp, #switch12-sp:checked ~ .slideContents-sp #slide12-sp, #switch13-sp:checked ~ .slideContents-sp #slide13-sp, #switch14-sp:checked ~ .slideContents-sp #slide14-sp, #switch15-sp:checked ~ .slideContents-sp #slide15-sp, #switch16-sp:checked ~ .slideContents-sp #slide16-sp, #switch17-sp:checked ~ .slideContents-sp #slide17-sp, #switch18-sp:checked ~ .slideContents-sp #slide18-sp, #switch19-sp:checked ~ .slideContents-sp #slide19-sp, #switch20-sp:checked ~ .slideContents-sp #slide20-sp, #switch21-sp:checked ~ .slideContents-sp #slide21-sp, #switch22-sp:checked ~ .slideContents-sp #slide22-sp, #switch23-sp:checked ~ .slideContents-sp #slide23-sp, #switch24-sp:checked ~ .slideContents-sp #slide24-sp, #switch25-sp:checked ~ .slideContents-sp #slide25-sp, #switch26-sp:checked ~ .slideContents-sp #slide26-sp, #switch27-sp:checked ~ .slideContents-sp #slide27-sp {
+#switch1-sp:checked ~ .slideContents-sp #slide1-sp, 
+#switch2-sp:checked ~ .slideContents-sp #slide2-sp, 
+#switch3-sp:checked ~ .slideContents-sp #slide3-sp, 
+#switch4-sp:checked ~ .slideContents-sp #slide4-sp, 
+#switch5-sp:checked ~ .slideContents-sp #slide5-sp, 
+#switch6-sp:checked ~ .slideContents-sp #slide6-sp, 
+#switch7-sp:checked ~ .slideContents-sp #slide7-sp, 
+#switch8-sp:checked ~ .slideContents-sp #slide8-sp, 
+#switch9-sp:checked ~ .slideContents-sp #slide9-sp, 
+#switch10-sp:checked ~ .slideContents-sp #slide10-sp,
+#switch11-sp:checked ~ .slideContents-sp #slide11-sp, 
+#switch12-sp:checked ~ .slideContents-sp #slide12-sp, 
+#switch13-sp:checked ~ .slideContents-sp #slide13-sp, 
+#switch14-sp:checked ~ .slideContents-sp #slide14-sp, 
+#switch15-sp:checked ~ .slideContents-sp #slide15-sp, 
+#switch16-sp:checked ~ .slideContents-sp #slide16-sp, 
+#switch17-sp:checked ~ .slideContents-sp #slide17-sp, 
+#switch18-sp:checked ~ .slideContents-sp #slide18-sp, 
+#switch19-sp:checked ~ .slideContents-sp #slide19-sp, 
+#switch20-sp:checked ~ .slideContents-sp #slide20-sp, 
+#switch21-sp:checked ~ .slideContents-sp #slide21-sp, 
+#switch22-sp:checked ~ .slideContents-sp #slide22-sp, 
+#switch23-sp:checked ~ .slideContents-sp #slide23-sp, 
+#switch24-sp:checked ~ .slideContents-sp #slide24-sp, 
+#switch25-sp:checked ~ .slideContents-sp #slide25-sp {
   position: relative;
   transform: none;
 }
