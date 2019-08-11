@@ -1,10 +1,9 @@
 body {
-	font-family: quicksand, San Francisco,
-		"Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体",
-		"ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+
 }
 
 .high {
+
 	padding:80px 0 20px 0;
 }
 
@@ -21,6 +20,7 @@ body {
 	color:#444;
 	line-height:1.75;
 	font-weight:bold;
+    font-size: calc(1.6rem + ((1vw - 0.64rem) * 2.1429));/* 24px~36pxで可変*/
 }
 
 
