@@ -37,7 +37,7 @@ body {
 
 .about_box {
 	width:225px;
-	    text-align: left;
+	    text-align: center;
 	    display: block;   /* インラインブロック化 */
 }
 

@@ -406,11 +406,11 @@ input[name="slideshow-sp"] {
   transform: none;
 }
 
-#switch1-sp:checked ~ .slideContents-sp #slide5-sp, #switch1-sp:checked ~ .slideContents-sp #slide4-sp {
+#switch1-sp:checked ~ .slideContents-sp #slide6-sp, #switch1-sp:checked ~ .slideContents-sp #slide5-sp {
   transform: translateX(-100%);
 }
 
-#switch2-sp:checked ~ .slideContents-sp #slide1-sp, #switch2-sp:checked ~ .slideContents-sp #slide5-sp {
+#switch2-sp:checked ~ .slideContents-sp #slide1-sp, #switch2-sp:checked ~ .slideContents-sp #slide6-sp {
   transform: translateX(-100%);
 }
 
@@ -426,6 +426,10 @@ input[name="slideshow-sp"] {
   transform: translateX(-100%);
 }
 
+#switch6-sp:checked ~ .slideContents-sp #slide5-sp, #switch6-sp:checked ~ .slideContents-sp #slide4-sp {
+  transform: translateX(-100%);
+}
+
 #switch1-sp:checked ~ .slideContents-sp #slide3-sp, #switch1-sp:checked ~ .slideContents-sp #slide4-sp {
   transition-duration: 0s;
 }
@@ -434,15 +438,19 @@ input[name="slideshow-sp"] {
   transition-duration: 0s;
 }
 
-#switch3-sp:checked ~ .slideContents-sp #slide5-sp, #switch3-sp:checked ~ .slideContents-sp #slide1-sp {
+#switch3-sp:checked ~ .slideContents-sp #slide5-sp, #switch3-sp:checked ~ .slideContents-sp #slide6-sp {
   transition-duration: 0s;
 }
 
-#switch4-sp:checked ~ .slideContents-sp #slide1-sp, #switch4-sp:checked ~ .slideContents-sp #slide2-sp {
+#switch4-sp:checked ~ .slideContents-sp #slide6-sp, #switch4-sp:checked ~ .slideContents-sp #slide1-sp {
   transition-duration: 0s;
 }
 
-#switch5-sp:checked ~ .slideContents-sp #slide2-sp, #switch5-sp:checked ~ .slideContents-sp #slide3-sp {
+#switch5-sp:checked ~ .slideContents-sp #slide1-sp, #switch5-sp:checked ~ .slideContents-sp #slide2-sp {
+  transition-duration: 0s;
+}
+
+#switch6-sp:checked ~ .slideContents-sp #slide2-sp, #switch6-sp:checked ~ .slideContents-sp #slide3-sp {
   transition-duration: 0s;
 }
 
@@ -451,18 +459,17 @@ input[name="slideshow-sp"] {
   pointer-events: none;
 }
 
-#switch1-sp:checked ~ .prev label[for="switch5-sp"], #switch2-sp:checked ~ .prev-sp label[for="switch1-sp"], #switch3-sp:checked ~ .prev-sp label[for="switch2-sp"], #switch4-sp:checked ~ .prev-sp label[for="switch3-sp"], #switch5-sp:checked ~ .prev-sp label[for="switch4-sp"], #switch1-sp:checked ~ .next-sp label[for="switch2-sp"], #switch2-sp:checked ~ .next-sp label[for="switch3-sp"], #switch3-sp:checked ~ .next-sp label[for="switch4-sp"], #switch4-sp:checked ~ .next-sp label[for="switch5-sp"], #switch5-sp:checked ~ .next-sp label[for="switch1-sp"] {
+#switch1-sp:checked ~ .prev label[for="switch5-sp"], 
+#switch2-sp:checked ~ .prev-sp label[for="switch1-sp"], 
+#switch3-sp:checked ~ .prev-sp label[for="switch2-sp"],
+#switch4-sp:checked ~ .prev-sp label[for="switch3-sp"], 
+#switch5-sp:checked ~ .prev-sp label[for="switch4-sp"],
+#switch6-sp:checked ~ .prev-sp label[for="switch5-sp"],
+#switch1-sp:checked ~ .next-sp label[for="switch2-sp"], 
+#switch2-sp:checked ~ .next-sp label[for="switch3-sp"],
+#switch3-sp:checked ~ .next-sp label[for="switch4-sp"], 
+#switch4-sp:checked ~ .next-sp label[for="switch5-sp"], 
+#switch5-sp:checked ~ .next-sp label[for="switch6-sp"],
+#switch6-sp:checked ~ .next-sp label[for="switch1-sp"]{
   pointer-events: auto;
 }
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
