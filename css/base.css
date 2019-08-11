@@ -26,6 +26,10 @@ body {
     padding: 10px 0  10px 0;
 	color:#222;
 	line-height:1.2;
+	  word-break: break-all;
+  line-break: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /*Company*/
