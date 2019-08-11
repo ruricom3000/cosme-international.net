@@ -9,6 +9,24 @@ body {
 	    text-align: center;
 }
 
+#about {
+	    text-align: left;
+	    display: inline-block;   /* インラインブロック化 */
+    margin-bottom: 7px; /* 外側に余白を追加(※右に3px・下に7px) */
+}
+
+.about_title {
+		    text-align: center;
+	font-size: 18px;
+}
+
+.about_text {
+    text-align: left;
+    font-size: 14px;
+    padding-bottom: 10px;
+	color:#222;
+}
+
 /*Company*/
 .company_container {
     margin: 0 auto;
