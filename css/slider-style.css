@@ -589,7 +589,7 @@ input[name="slideshow-sp"] {
   pointer-events: none;
 }
 
-#switch1-sp:checked ~ .prev-sp label[for="switch25-sp"], 
+#switch1-sp:checked ~ .prev label[for="switch25-sp"], 
 #switch2-sp:checked ~ .prev-sp label[for="switch1-sp"], 
 #switch3-sp:checked ~ .prev-sp label[for="switch2-sp"], 
 #switch4-sp:checked ~ .prev-sp label[for="switch3-sp"], 
