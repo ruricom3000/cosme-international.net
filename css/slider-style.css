@@ -639,7 +639,6 @@ input[name="slideshow-sp"] {
 #switch23-sp:checked ~ .prev-sp label[for="switch22-sp"], 
 #switch24-sp:checked ~ .prev-sp label[for="switch23-sp"], 
 #switch25-sp:checked ~ .prev-sp label[for="switch24-sp"],
-
 #switch1-sp:checked ~ .next-sp label[for="switch2-sp"], 
 #switch2-sp:checked ~ .next-sp label[for="switch3-sp"], 
 #switch3-sp:checked ~ .next-sp label[for="switch4-sp"], 
