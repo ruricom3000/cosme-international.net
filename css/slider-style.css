@@ -24,7 +24,7 @@ input[name="slideshow-pc"] {
   user-select: none;
   transition: transform .6s;
   padding: 15px 0;
-  max-height: 450px;
+  max-height: 500px;
   height: 120%;
 }
 
@@ -225,6 +225,9 @@ input[name="slideshow-pc"] {
 {
   pointer-events: auto;
 }
+
+
+
 
 /* :::::: スマホ表示 :::::: */
 .slideshow-sp {
@@ -439,7 +442,8 @@ input[name="slideshow-sp"] {
 
 #switch15-sp:checked ~ .slideContents-sp #slide14-sp, #switch15-sp:checked ~ .slideContents-sp #slide13-sp {
   transform: translateX(-100%);
-
+}
+	
 #switch16-sp:checked ~ .slideContents-sp #slide15-sp, #switch16-sp:checked ~ .slideContents-sp #slide14-sp {
   transform: translateX(-100%);
 }
@@ -458,6 +462,7 @@ input[name="slideshow-sp"] {
 
 #switch20-sp:checked ~ .slideContents-sp #slide19-sp, #switch20-sp:checked ~ .slideContents-sp #slide18-sp {
   transform: translateX(-100%);
+}
 	
 #switch21-sp:checked ~ .slideContents-sp #slide20-sp, #switch21-sp:checked ~ .slideContents-sp #slide19-sp {
   transform: translateX(-100%);
@@ -477,6 +482,7 @@ input[name="slideshow-sp"] {
 
 #switch25-sp:checked ~ .slideContents-sp #slide24-sp, #switch25-sp:checked ~ .slideContents-sp #slide23-sp {
   transform: translateX(-100%);
+}
 	
 #switch1-sp:checked ~ .slideContents-sp #slide3-sp, #switch1-sp:checked ~ .slideContents-sp #slide4-sp {
   transition-duration: 0s;
@@ -496,6 +502,7 @@ input[name="slideshow-sp"] {
 
 #switch5-sp:checked ~ .slideContents-sp #slide7-sp, #switch5-sp:checked ~ .slideContents-sp #slide8-sp {
   transition-duration: 0s;
+}
 	
 #switch6-sp:checked ~ .slideContents-sp #slide8-sp, #switch6-sp:checked ~ .slideContents-sp #slide9-sp {
   transition-duration: 0s;
@@ -515,6 +522,7 @@ input[name="slideshow-sp"] {
 
 #switch10-sp:checked ~ .slideContents-sp #slide12-sp, #switch10-sp:checked ~ .slideContents-sp #slide13-sp {
   transition-duration: 0s;
+}
 
 #switch11-sp:checked ~ .slideContents-sp #slide13-sp, #switch11-sp:checked ~ .slideContents-sp #slide14-sp {
   transition-duration: 0s;
@@ -534,6 +542,7 @@ input[name="slideshow-sp"] {
 
 #switch15-sp:checked ~ .slideContents-sp #slide17-sp, #switch15-sp:checked ~ .slideContents-sp #slide18-sp {
   transition-duration: 0s;
+}
 	
 #switch16-sp:checked ~ .slideContents-sp #slide18-sp, #switch16-sp:checked ~ .slideContents-sp #slide19-sp {
   transition-duration: 0s;
@@ -553,6 +562,7 @@ input[name="slideshow-sp"] {
 
 #switch20-sp:checked ~ .slideContents-sp #slide22-sp, #switch20-sp:checked ~ .slideContents-sp #slide23-sp {
   transition-duration: 0s;
+}
 	
 #switch21-sp:checked ~ .slideContents-sp #slide23-sp, #switch21-sp:checked ~ .slideContents-sp #slide24-sp {
   transition-duration: 0s;
