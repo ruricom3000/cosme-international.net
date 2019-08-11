@@ -18,12 +18,11 @@ h2 .main{
 	font-weight:bold;
 }
 
-h3 {
+.about_title {
 	text-align:center;
-	font-size: 14px;
+	font-size: 18px;
 	line-height:30px;
 }	
-
 
 .about_box {
 	width:225px;
