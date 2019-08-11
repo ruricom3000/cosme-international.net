@@ -1,0 +1,365 @@
+@charset "UTF-8";
+.slideshow {
+  position: relative;
+  overflow: hidden;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  .slideshow {
+    display: none;
+  }
+}
+
+input[name="slideshow-pc"] {
+  display: none;
+}
+
+/* :::::: slideContents :::::: */
+.slideContents {
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  user-select: none;
+  transition: transform .6s;
+  padding: 15px 0;
+  max-height: 400px;
+  height: 120%;
+}
+
+.slideContents ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateX(100%);
+  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.slideContents ul .slide-image-area {
+  display: inline-block;
+	width: 32%;
+	height: 500px;
+  vertical-align: bottom;
+}
+
+.slideContents ul .slide-image-wrap {
+  margin: 0;
+}
+
+.slideContents ul .slide-image-wrap img {
+  width: auto;
+  height: auto;
+  max-width: 320px;
+  max-height: 500px;
+  padding: 5%;
+	box-sizing: border-box;
+	display: inline;
+}
+
+.slideContents ul .slide-image-wrap .slide-image-text {
+    line-height: 1.2;
+	font-size: 16px;
+}
+
+.slideContents ul .slide-image-wrap .slide-image-text .title{
+  font-weight: bold;
+}
+
+/* :::::: arrows :::::: */
+.arrow {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  transition: background .3s;
+}
+
+.arrow label, .arrow .ico {
+  position: absolute;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.arrow {
+  cursor: pointer;
+  width: 50px;
+  height: 100%;
+}
+
+.arrow label {
+  cursor: pointer;
+  width: 50px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.arrow .ico {
+  top: calc(50% - 6px);
+  width: 12px;
+  height: 12px;
+  border-top: 3px solid #2a2a2a;
+}
+
+.prev .ico {
+  left: 25%;
+  border-left: 3px solid #2a2a2a;
+  transform: rotate(-45deg);
+  transition: left 0.3s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.3s;
+}
+
+.next .ico {
+  right: 25%;
+  border-right: 3px solid #2a2a2a;
+  transform: rotate(45deg);
+  transition: right 0.3s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.3s;
+}
+
+.prev:hover .ico {
+  left: calc(50% - 6px);
+}
+
+.next:hover .ico {
+  right: calc(50% - 6px);
+}
+
+/* :::::: mechanism :::::: */
+#switch1:checked ~ .slideContents #slide1, #switch2:checked ~ .slideContents #slide2, #switch3:checked ~ .slideContents #slide3, #switch4:checked ~ .slideContents #slide4, #switch5:checked ~ .slideContents #slide5 {
+  position: relative;
+  transform: none;
+}
+
+#switch1:checked ~ .slideContents #slide5, #switch1:checked ~ .slideContents #slide4 {
+  transform: translateX(-100%);
+}
+
+#switch2:checked ~ .slideContents #slide1, #switch2:checked ~ .slideContents #slide5 {
+  transform: translateX(-100%);
+}
+
+#switch3:checked ~ .slideContents #slide2, #switch3:checked ~ .slideContents #slide1 {
+  transform: translateX(-100%);
+}
+
+#switch4:checked ~ .slideContents #slide3, #switch4:checked ~ .slideContents #slide2 {
+  transform: translateX(-100%);
+}
+
+#switch5:checked ~ .slideContents #slide4, #switch5:checked ~ .slideContents #slide3 {
+  transform: translateX(-100%);
+}
+
+#switch1:checked ~ .slideContents #slide3, #switch1:checked ~ .slideContents #slide4 {
+  transition-duration: 0s;
+}
+
+#switch2:checked ~ .slideContents #slide4, #switch2:checked ~ .slideContents #slide5 {
+  transition-duration: 0s;
+}
+
+#switch3:checked ~ .slideContents #slide5, #switch3:checked ~ .slideContents #slide1 {
+  transition-duration: 0s;
+}
+
+#switch4:checked ~ .slideContents #slide1, #switch4:checked ~ .slideContents #slide2 {
+  transition-duration: 0s;
+}
+
+#switch5:checked ~ .slideContents #slide2, #switch5:checked ~ .slideContents #slide3 {
+  transition-duration: 0s;
+}
+
+/* :::::: arrow mechanism :::::: */
+.arrow label {
+  pointer-events: none;
+}
+
+#switch1:checked ~ .prev label[for="switch5"], #switch2:checked ~ .prev label[for="switch1"], #switch3:checked ~ .prev label[for="switch2"], #switch4:checked ~ .prev label[for="switch3"], #switch5:checked ~ .prev label[for="switch4"], #switch1:checked ~ .next label[for="switch2"], #switch2:checked ~ .next label[for="switch3"], #switch3:checked ~ .next label[for="switch4"], #switch4:checked ~ .next label[for="switch5"], #switch5:checked ~ .next label[for="switch1"] {
+  pointer-events: auto;
+}
+
+/* :::::: スマホ表示 :::::: */
+.slideshow-sp {
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 481px) {
+  .slideshow-sp {
+    display: none;
+  }
+}
+
+input[name="slideshow-sp"] {
+  display: none;
+}
+
+/* :::::: slideContents :::::: */
+.slideContents-sp {
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  user-select: none;
+  transition: transform .6s;
+}
+
+.slideContents-sp section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateX(100%);
+  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  padding: 5% 0;
+}
+
+.slideContents-sp section .slide-image-wrap-sp {
+  margin: 0 auto;
+  max-width: 400px;
+  height: 300px;
+}
+
+.slideContents-sp section .slide-image-wrap-sp img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+.slideContents-sp section .slide-image-wrap-sp .slide-image-text {
+    line-height: 1.2;
+	font-size: 16px;
+}
+
+.slideContents ul .slide-image-wrap .slide-image-text .title{
+  font-weight: bold;
+}
+
+/* :::::: arrows :::::: */
+.arrow-sp {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  transition: background .3s;
+}
+
+.arrow-sp label, .arrow-sp .ico-sp {
+  position: absolute;
+}
+
+.prev-sp {
+  left: 0;
+}
+
+.next-sp {
+  right: 0;
+}
+
+.arrow-sp {
+  cursor: pointer;
+  width: 50px;
+  height: 100%;
+}
+
+.arrow-sp label {
+  cursor: pointer;
+  width: 50px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.arrow-sp .ico-sp {
+  top: calc(50% - 6px);
+  width: 12px;
+  height: 12px;
+  border-top: 3px solid #2a2a2a;
+}
+
+.prev-sp .ico-sp {
+  left: 25%;
+  border-left: 3px solid #2a2a2a;
+  transform: rotate(-45deg);
+  transition: left 0.3s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.3s;
+}
+
+.next-sp .ico-sp {
+  right: 25%;
+  border-right: 3px solid #2a2a2a;
+  transform: rotate(45deg);
+  transition: right 0.3s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.3s;
+}
+
+.prev-sp:hover .ico-sp {
+  left: calc(50% - 6px);
+}
+
+.next-sp:hover .ico-sp {
+  right: calc(50% - 6px);
+}
+
+/* :::::: mechanism :::::: */
+#switch1-sp:checked ~ .slideContents-sp #slide1-sp, #switch2-sp:checked ~ .slideContents-sp #slide2-sp, #switch3-sp:checked ~ .slideContents-sp #slide3-sp, #switch4-sp:checked ~ .slideContents-sp #slide4-sp, #switch5-sp:checked ~ .slideContents-sp #slide5-sp {
+  position: relative;
+  transform: none;
+}
+
+#switch1-sp:checked ~ .slideContents-sp #slide5-sp, #switch1-sp:checked ~ .slideContents-sp #slide4-sp {
+  transform: translateX(-100%);
+}
+
+#switch2-sp:checked ~ .slideContents-sp #slide1-sp, #switch2-sp:checked ~ .slideContents-sp #slide5-sp {
+  transform: translateX(-100%);
+}
+
+#switch3-sp:checked ~ .slideContents-sp #slide2-sp, #switch3-sp:checked ~ .slideContents-sp #slide1-sp {
+  transform: translateX(-100%);
+}
+
+#switch4-sp:checked ~ .slideContents-sp #slide3-sp, #switch4-sp:checked ~ .slideContents-sp #slide2-sp {
+  transform: translateX(-100%);
+}
+
+#switch5-sp:checked ~ .slideContents-sp #slide4-sp, #switch5-sp:checked ~ .slideContents-sp #slide3-sp {
+  transform: translateX(-100%);
+}
+
+#switch1-sp:checked ~ .slideContents-sp #slide3-sp, #switch1-sp:checked ~ .slideContents-sp #slide4-sp {
+  transition-duration: 0s;
+}
+
+#switch2-sp:checked ~ .slideContents-sp #slide4-sp, #switch2-sp:checked ~ .slideContents-sp #slide5-sp {
+  transition-duration: 0s;
+}
+
+#switch3-sp:checked ~ .slideContents-sp #slide5-sp, #switch3-sp:checked ~ .slideContents-sp #slide1-sp {
+  transition-duration: 0s;
+}
+
+#switch4-sp:checked ~ .slideContents-sp #slide1-sp, #switch4-sp:checked ~ .slideContents-sp #slide2-sp {
+  transition-duration: 0s;
+}
+
+#switch5-sp:checked ~ .slideContents-sp #slide2-sp, #switch5-sp:checked ~ .slideContents-sp #slide3-sp {
+  transition-duration: 0s;
+}
+
+/* :::::: arrow mechanism :::::: */
+.arrow-sp label {
+  pointer-events: none;
+}
+
+#switch1-sp:checked ~ .prev label[for="switch5-sp"], #switch2-sp:checked ~ .prev-sp label[for="switch1-sp"], #switch3-sp:checked ~ .prev-sp label[for="switch2-sp"], #switch4-sp:checked ~ .prev-sp label[for="switch3-sp"], #switch5-sp:checked ~ .prev-sp label[for="switch4-sp"], #switch1-sp:checked ~ .next-sp label[for="switch2-sp"], #switch2-sp:checked ~ .next-sp label[for="switch3-sp"], #switch3-sp:checked ~ .next-sp label[for="switch4-sp"], #switch4-sp:checked ~ .next-sp label[for="switch5-sp"], #switch5-sp:checked ~ .next-sp label[for="switch1-sp"] {
+  pointer-events: auto;
+}

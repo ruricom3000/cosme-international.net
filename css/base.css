@@ -1,0 +1,27 @@
+body {
+	font-family: quicksand, San Francisco,
+		"Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体",
+		"ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
+/*Company*/
+.company_container {
+    margin: 0 auto;
+}
+.company_detail {
+    border-collapse: collapse;
+}
+.company_detail td {
+    text-align: left;
+    vertical-align: top;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.company_detail td:nth-of-type(1) {
+    white-space: nowrap;
+    padding-right: 30px;
+}
+.company_detail .table_t{
+    font-weight: bold;
+}
+
