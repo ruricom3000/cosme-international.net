@@ -25,7 +25,7 @@ input[name="slideshow-pc"] {
   transition: transform .6s;
   padding: 15px 0;
   max-height: 550px;
-  height: 140%;
+  height: 150%;
 }
 
 .slideContents ul {
@@ -40,7 +40,7 @@ input[name="slideshow-pc"] {
 .slideContents ul .slide-image-area {
   display: inline-block;
 	width: 32%;
-	height: 550px;
+	height: 500px;
   vertical-align: bottom;
 }
 
@@ -52,7 +52,7 @@ input[name="slideshow-pc"] {
   width: auto;
   height: auto;
   max-width: 320px;
-  max-height: 550px;
+  max-height: 500px;
   padding: 5%;
 	box-sizing: border-box;
 	display: inline;
