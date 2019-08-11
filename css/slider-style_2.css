@@ -24,8 +24,8 @@ input[name="slideshow-pc"] {
   user-select: none;
   transition: transform .6s;
   padding: 15px 0;
-  max-height: 600px;
-  height: 100%;
+  max-height: 500px;
+  height: 120%;
 }
 
 .slideContents ul {
@@ -40,7 +40,7 @@ input[name="slideshow-pc"] {
 .slideContents ul .slide-image-area {
   display: inline-block;
 	width: 32%;
-		height: 500px;
+	height: 500px;
   vertical-align: bottom;
 }
 
@@ -51,14 +51,24 @@ input[name="slideshow-pc"] {
 .slideContents ul .slide-image-wrap img {
   width: auto;
   height: auto;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 320px;
+  max-height: 500px;
   padding: 5%;
-  box-sizing: border-box;
+	box-sizing: border-box;
+	display: inline;
 }
 
 .slideContents ul .slide-image-wrap .slide-image-text {
-  font-size: 14px;
+	  text-align: center;
+    line-height: 1.7;
+	font-size: 16px;
+}
+
+.slideContents ul .slide-image-wrap .slide-image-text .product{
+  font-weight: bold;
+}
+.slideContents ul .slide-image-wrap .slide-image-text .price{
+	font-size:14px;
 }
 
 /* :::::: arrows :::::: */
