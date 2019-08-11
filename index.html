@@ -38,7 +38,51 @@ onloadCSS(loadCss('https://assets.jimstatic.com/web.css.133312a193e3b4cce366ae56
 // ]]>
 </script>
 
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!-- ＃リンクのスムーズスクロール -->
+    <script>
+      $(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          var speed = 400; // ミリ秒で記述
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script>
+  // ページトップJavascriptの記述
+  //■page topボタン
+  $(function(){
+  var topBtn=$('#pageTop');
+  topBtn.hide();
+
+  //◇ボタンの表示設定
+  $(window).scroll(function(){
+    if($(this).scrollTop()>80){
+      //---- 画面を80pxスクロールしたら、ボタンを表示する
+      topBtn.fadeIn();
+    }else{
+      //---- 画面が80pxより上なら、ボタンを表示しない
+      topBtn.fadeOut();
+    } 
+  });
+
+  // ◇ボタンをクリックしたら、スクロールして上に戻る
+  topBtn.click(function(){
+    $('body,html').animate({
+    scrollTop: 0},500);
+    return false;
+  });
+
+  });
+</script>
 
      <script> (function(window) { 'use strict'; var regBuff = window.__regModuleBuffer = []; var regModuleBuffer = function() { var args = [].slice.call(arguments); regBuff.push(args); }; if (!window.regModule) { window.regModule = regModuleBuffer; } })(window); </script>
 
@@ -100,28 +144,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     </header><!-- END _header.sass -->
 	
-<!-- _title.sass --><div id="main">
+<!-- _title.sass -->
+<div id="main">
       <img src="image/bg_2.jpg">
+<h1 class="main_copy">お客様と共に１からベストな化粧品作りを<br/>化粧品ＯＥＭメーカー&nbsp;株式会社コスメインターナショナル</h1>
 	  </div>
     <!-- END _title.sass -->
-
+	
     <!-- _section.sass -->
     <div class="jtpl-section cc-content-parent">
       <div class="jtpl-content content-options cc-content-parent">
         <div class="jtpl-content__inner content-padding cc-content-parent">
-		
-
-		  
+	  
 <div id="content_area" data-container="content">
-        
-<h2 style="main">お客様と共に１からベストな化粧品作りを<br/>化粧品ＯＥＭメーカー&nbsp;株式会社コスメインターナショナル</h2>
-
-<div id="cc-m-12509157126" class="j-module n j-text "><div id="cc-m-9784641484" class="j-module n j-spacing">
-    <div class="cc-m-spacer" style="height: 180px;">
-    </div>
 
 <div id="cc-m-9785385984" class="j-module n j-header">
-    <h1 id="product">
+    <h1 id="product" class="high">
         PRODUCT
     </h1>
 </div>
@@ -591,14 +629,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <div id="cc-m-12509315126" class="j-module n j-text ">
 
-<div id="cc-m-9784641484" class="j-module n j-spacing">
-<div class="cc-m-spacer" style="height: 120px;">
-</div>
-</div>
 
 
 <div id="cc-m-9785385984" class="j-module n j-header">
-    <h1 id="about">
+    <h1 id="about" class="high">
         ABOUT
     </h1>
 </div>
@@ -734,14 +768,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="cc-m-hgrid-overlay" data-display="cms-only"></div>
 
 <br class="cc-clear"/>
-
-</div><div id="cc-m-12509319226" class="j-module n j-text "><div id="cc-m-9784641484" class="j-module n j-spacing">
-    <div class="cc-m-spacer" style="height: 120px;">
-    </div>
 </div>
 
+<div id="cc-m-12509319226" class="j-module n j-text ">
+
+
 <div id="cc-m-9785385984" class="j-module n j-header">
-    <h1 id="company">
+    <h1 id="company" class="high">
         COMPANY
     </h1>
 </div>
@@ -899,18 +932,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 </div></div>
-        
         </div>
         </div>
       </div>
+	  	  
     <div class="cc-m-spacer" style="height: 240px;">
     </div>
-    
+ 
+
+   
     <div id="footer">
-        <span class="info"><a href="index.html">ページトップ</a></span><span class="info"><a href="#product">商品情報</a></span><span class="info"><a href="#about">事業内容</a></span><span class="info"><a href="#company">会社概要</a></span>
+        <span class="info"><a href="#">ページトップ</a></span><span class="info"><a href="#product">商品情報</a></span><span class="info"><a href="#about">事業内容</a></span><span class="info"><a href="#company">会社概要</a></span>
 		<br>
 		<span class="info">© COSME INTERNATIONAL Co., LTD.<span>
 		</div>
+
+<p id="pageTop"><a href="#"><i class="fa fa-chevron-up"></i></a></p>
 
     </div>
     <!-- ENDE_section.sass -->
@@ -918,7 +955,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
   <!-- END _main.sass -->
 </div>
-
+<!-- jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </body>
 
 </html>
