@@ -219,9 +219,25 @@ input[name="slideshow-pc"] {
   pointer-events: none;
 }
 
-#switch1:checked ~ .prev label[for="switch9"], #switch2:checked ~ .prev label[for="switch1"], #switch3:checked ~ .prev label[for="switch2"], #switch4:checked ~ .prev label[for="switch3"], #switch5:checked ~ .prev label[for="switch4"], #switch6:checked ~ .prev label[for="switch5"], #switch7:checked ~ .prev label[for="switch6"], #switch8:checked ~ .prev label[for="switch7"], #switch9:checked ~ .prev label[for="switch8"],
+#switch1:checked ~ .prev label[for="switch9"], 
+#switch2:checked ~ .prev label[for="switch1"], 
+#switch3:checked ~ .prev label[for="switch2"], 
+#switch4:checked ~ .prev label[for="switch3"], 
+#switch5:checked ~ .prev label[for="switch4"], 
+#switch6:checked ~ .prev label[for="switch5"], 
+#switch7:checked ~ .prev label[for="switch6"], 
+#switch8:checked ~ .prev label[for="switch7"], 
+#switch9:checked ~ .prev label[for="switch8"],
 
-#switch1:checked ~ .next label[for="switch2"], #switch2:checked ~ .next label[for="switch3"], #switch3:checked ~ .next label[for="switch4"], #switch4:checked ~ .next label[for="switch5"], #switch5:checked ~ .next label[for="switch6"], #switch6:checked ~ .next label[for="switch7"], #switch7:checked ~ .next label[for="switch8"], #switch8:checked ~ .next label[for="switch9"], #switch9:checked ~ .next label[for="switch1"]
+#switch1:checked ~ .next label[for="switch2"], 
+#switch2:checked ~ .next label[for="switch3"], 
+#switch3:checked ~ .next label[for="switch4"], 
+#switch4:checked ~ .next label[for="switch5"], 
+#switch5:checked ~ .next label[for="switch6"], 
+#switch6:checked ~ .next label[for="switch7"], 
+#switch7:checked ~ .next label[for="switch8"], 
+#switch8:checked ~ .next label[for="switch9"], 
+#switch9:checked ~ .next label[for="switch1"]
 {
   pointer-events: auto;
 }
@@ -589,7 +605,7 @@ input[name="slideshow-sp"] {
   pointer-events: none;
 }
 
-#switch1-sp:checked ~ .prev label[for="switch25-sp"], 
+#switch1-sp:checked ~ .prev-sp label[for="switch25-sp"], 
 #switch2-sp:checked ~ .prev-sp label[for="switch1-sp"], 
 #switch3-sp:checked ~ .prev-sp label[for="switch2-sp"], 
 #switch4-sp:checked ~ .prev-sp label[for="switch3-sp"], 
@@ -639,8 +655,7 @@ input[name="slideshow-sp"] {
 #switch22-sp:checked ~ .next-sp label[for="switch23-sp"], 
 #switch23-sp:checked ~ .next-sp label[for="switch24-sp"], 
 #switch24-sp:checked ~ .next-sp label[for="switch25-sp"], 
-#switch25-sp:checked ~ .next-sp label[for="switch1-sp"] 
-
-{
+#switch25-sp:checked ~ .next-sp label[for="switch1-sp"] {
+	
   pointer-events: auto;
 }
