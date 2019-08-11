@@ -18,6 +18,11 @@ h2 .main{
 	font-weight:bold;
 }
 
+.about_wrap {
+		    margin: 0 auto;
+		text-align:center;
+}
+
 .about_title {
 	text-align:center;
 	font-size: 18px;
