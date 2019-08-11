@@ -138,16 +138,24 @@ input[name="slideshow-pc"] {
 }
 
 /* :::::: mechanism :::::: */
-#switch1:checked ~ .slideContents #slide1, #switch2:checked ~ .slideContents #slide2, #switch3:checked ~ .slideContents #slide3, #switch4:checked ~ .slideContents #slide4, #switch5:checked ~ .slideContents #slide5 {
+#switch1:checked ~ .slideContents #slide1,
+#switch2:checked ~ .slideContents #slide2, 
+#switch3:checked ~ .slideContents #slide3, 
+#switch4:checked ~ .slideContents #slide4, 
+#switch5:checked ~ .slideContents #slide5, 
+#switch6:checked ~ .slideContents #slide6, 
+#switch7:checked ~ .slideContents #slide7, 
+#switch8:checked ~ .slideContents #slide8, 
+#switch9:checked ~ .slideContents #slide9 {
   position: relative;
   transform: none;
 }
 
-#switch1:checked ~ .slideContents #slide5, #switch1:checked ~ .slideContents #slide4 {
+#switch1:checked ~ .slideContents #slide9, #switch1:checked ~ .slideContents #slide8 {
   transform: translateX(-100%);
 }
 
-#switch2:checked ~ .slideContents #slide1, #switch2:checked ~ .slideContents #slide5 {
+#switch2:checked ~ .slideContents #slide1, #switch2:checked ~ .slideContents #slide9 {
   transform: translateX(-100%);
 }
 
@@ -163,15 +171,32 @@ input[name="slideshow-pc"] {
   transform: translateX(-100%);
 }
 
-#switch1:checked ~ .slideContents #slide3, #switch1:checked ~ .slideContents #slide4 {
+#switch6:checked ~ .slideContents #slide5, #switch6:checked ~ .slideContents #slide4 {
+  transform: translateX(-100%);
+}
+
+#switch7:checked ~ .slideContents #slide6, #switch7:checked ~ .slideContents #slide5 {
+  transform: translateX(-100%);
+}
+
+#switch8:checked ~ .slideContents #slide7, #switch8:checked ~ .slideContents #slide6 {
+  transform: translateX(-100%);
+}
+
+#switch9:checked ~ .slideContents #slide8, #switch9:checked ~ .slideContents #slide7 {
+  transform: translateX(-100%);
+}
+
+
+#switch1:checked ~ .slideContents #slide7, #switch1:checked ~ .slideContents #slide8 {
   transition-duration: 0s;
 }
 
-#switch2:checked ~ .slideContents #slide4, #switch2:checked ~ .slideContents #slide5 {
+#switch2:checked ~ .slideContents #slide8, #switch2:checked ~ .slideContents #slide9 {
   transition-duration: 0s;
 }
 
-#switch3:checked ~ .slideContents #slide5, #switch3:checked ~ .slideContents #slide1 {
+#switch3:checked ~ .slideContents #slide9, #switch3:checked ~ .slideContents #slide1 {
   transition-duration: 0s;
 }
 
@@ -183,12 +208,47 @@ input[name="slideshow-pc"] {
   transition-duration: 0s;
 }
 
+#switch6:checked ~ .slideContents #slide3, #switch6:checked ~ .slideContents #slide4 {
+  transition-duration: 0s;
+}
+
+#switch7:checked ~ .slideContents #slide4, #switch7:checked ~ .slideContents #slide5 {
+  transition-duration: 0s;
+}
+
+#switch8:checked ~ .slideContents #slide5, #switch8:checked ~ .slideContents #slide6 {
+  transition-duration: 0s;
+}
+
+#switch9:checked ~ .slideContents #slide6, #switch9:checked ~ .slideContents #slide7 {
+  transition-duration: 0s;
+}
+
 /* :::::: arrow mechanism :::::: */
 .arrow label {
   pointer-events: none;
 }
 
-#switch1:checked ~ .prev label[for="switch5"], #switch2:checked ~ .prev label[for="switch1"], #switch3:checked ~ .prev label[for="switch2"], #switch4:checked ~ .prev label[for="switch3"], #switch5:checked ~ .prev label[for="switch4"], #switch1:checked ~ .next label[for="switch2"], #switch2:checked ~ .next label[for="switch3"], #switch3:checked ~ .next label[for="switch4"], #switch4:checked ~ .next label[for="switch5"], #switch5:checked ~ .next label[for="switch1"] {
+#switch1:checked ~ .prev label[for="switch9"], 
+#switch2:checked ~ .prev label[for="switch1"], 
+#switch3:checked ~ .prev label[for="switch2"], 
+#switch4:checked ~ .prev label[for="switch3"], 
+#switch5:checked ~ .prev label[for="switch4"], 
+#switch6:checked ~ .prev label[for="switch5"], 
+#switch7:checked ~ .prev label[for="switch6"], 
+#switch8:checked ~ .prev label[for="switch7"], 
+#switch9:checked ~ .prev label[for="switch8"],
+
+#switch1:checked ~ .next label[for="switch2"], 
+#switch2:checked ~ .next label[for="switch3"], 
+#switch3:checked ~ .next label[for="switch4"], 
+#switch4:checked ~ .next label[for="switch5"], 
+#switch5:checked ~ .next label[for="switch6"], 
+#switch6:checked ~ .next label[for="switch7"], 
+#switch7:checked ~ .next label[for="switch8"], 
+#switch8:checked ~ .next label[for="switch9"], 
+#switch9:checked ~ .next label[for="switch1"]
+{
   pointer-events: auto;
 }
 
@@ -311,7 +371,31 @@ input[name="slideshow-sp"] {
 }
 
 /* :::::: mechanism :::::: */
-#switch1-sp:checked ~ .slideContents-sp #slide1-sp, #switch2-sp:checked ~ .slideContents-sp #slide2-sp, #switch3-sp:checked ~ .slideContents-sp #slide3-sp, #switch4-sp:checked ~ .slideContents-sp #slide4-sp, #switch5-sp:checked ~ .slideContents-sp #slide5-sp {
+#switch1-sp:checked ~ .slideContents-sp #slide1-sp, 
+#switch2-sp:checked ~ .slideContents-sp #slide2-sp, 
+#switch3-sp:checked ~ .slideContents-sp #slide3-sp, 
+#switch4-sp:checked ~ .slideContents-sp #slide4-sp, 
+#switch5-sp:checked ~ .slideContents-sp #slide5-sp, 
+#switch6-sp:checked ~ .slideContents-sp #slide6-sp, 
+#switch7-sp:checked ~ .slideContents-sp #slide7-sp, 
+#switch8-sp:checked ~ .slideContents-sp #slide8-sp, 
+#switch9-sp:checked ~ .slideContents-sp #slide9-sp, 
+#switch10-sp:checked ~ .slideContents-sp #slide10-sp,
+#switch11-sp:checked ~ .slideContents-sp #slide11-sp, 
+#switch12-sp:checked ~ .slideContents-sp #slide12-sp, 
+#switch13-sp:checked ~ .slideContents-sp #slide13-sp, 
+#switch14-sp:checked ~ .slideContents-sp #slide14-sp, 
+#switch15-sp:checked ~ .slideContents-sp #slide15-sp, 
+#switch16-sp:checked ~ .slideContents-sp #slide16-sp, 
+#switch17-sp:checked ~ .slideContents-sp #slide17-sp, 
+#switch18-sp:checked ~ .slideContents-sp #slide18-sp, 
+#switch19-sp:checked ~ .slideContents-sp #slide19-sp, 
+#switch20-sp:checked ~ .slideContents-sp #slide20-sp, 
+#switch21-sp:checked ~ .slideContents-sp #slide21-sp, 
+#switch22-sp:checked ~ .slideContents-sp #slide22-sp, 
+#switch23-sp:checked ~ .slideContents-sp #slide23-sp, 
+#switch24-sp:checked ~ .slideContents-sp #slide24-sp, 
+#switch25-sp:checked ~ .slideContents-sp #slide25-sp {
   position: relative;
   transform: none;
 }
