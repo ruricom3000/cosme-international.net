@@ -24,7 +24,7 @@ input[name="slideshow-pc"] {
   user-select: none;
   transition: transform .6s;
   padding: 15px 0;
-  max-height: 400px;
+  max-height: 450px;
   height: 120%;
 }
 
@@ -59,13 +59,17 @@ input[name="slideshow-pc"] {
 }
 
 .slideContents ul .slide-image-wrap .slide-image-text {
-    line-height: 1.2;
+    line-height: 1.7;
 	font-size: 16px;
 }
 
-.slideContents ul .slide-image-wrap .slide-image-text .title{
+.slideContents ul .slide-image-wrap .slide-image-text .product{
   font-weight: bold;
 }
+.slideContents ul .slide-image-wrap .slide-image-text .price{
+	font-size:14px;
+}
+
 
 /* :::::: arrows :::::: */
 .arrow {
@@ -132,16 +136,16 @@ input[name="slideshow-pc"] {
 }
 
 /* :::::: mechanism :::::: */
-#switch1:checked ~ .slideContents #slide1, #switch2:checked ~ .slideContents #slide2, #switch3:checked ~ .slideContents #slide3, #switch4:checked ~ .slideContents #slide4, #switch5:checked ~ .slideContents #slide5 {
+#switch1:checked ~ .slideContents #slide1, #switch2:checked ~ .slideContents #slide2, #switch3:checked ~ .slideContents #slide3, #switch4:checked ~ .slideContents #slide4, #switch5:checked ~ .slideContents #slide5, #switch6:checked ~ .slideContents #slide6, #switch7:checked ~ .slideContents #slide7, #switch8:checked ~ .slideContents #slide8, #switch9:checked ~ .slideContents #slide9 {
   position: relative;
   transform: none;
 }
 
-#switch1:checked ~ .slideContents #slide5, #switch1:checked ~ .slideContents #slide4 {
+#switch1:checked ~ .slideContents #slide9, #switch1:checked ~ .slideContents #slide8 {
   transform: translateX(-100%);
 }
 
-#switch2:checked ~ .slideContents #slide1, #switch2:checked ~ .slideContents #slide5 {
+#switch2:checked ~ .slideContents #slide1, #switch2:checked ~ .slideContents #slide9 {
   transform: translateX(-100%);
 }
 
@@ -157,15 +161,32 @@ input[name="slideshow-pc"] {
   transform: translateX(-100%);
 }
 
-#switch1:checked ~ .slideContents #slide3, #switch1:checked ~ .slideContents #slide4 {
+#switch6:checked ~ .slideContents #slide5, #switch6:checked ~ .slideContents #slide4 {
+  transform: translateX(-100%);
+}
+
+#switch7:checked ~ .slideContents #slide6, #switch7:checked ~ .slideContents #slide5 {
+  transform: translateX(-100%);
+}
+
+#switch8:checked ~ .slideContents #slide7, #switch8:checked ~ .slideContents #slide6 {
+  transform: translateX(-100%);
+}
+
+#switch9:checked ~ .slideContents #slide8, #switch9:checked ~ .slideContents #slide7 {
+  transform: translateX(-100%);
+}
+
+
+#switch1:checked ~ .slideContents #slide7, #switch1:checked ~ .slideContents #slide8 {
   transition-duration: 0s;
 }
 
-#switch2:checked ~ .slideContents #slide4, #switch2:checked ~ .slideContents #slide5 {
+#switch2:checked ~ .slideContents #slide8, #switch2:checked ~ .slideContents #slide9 {
   transition-duration: 0s;
 }
 
-#switch3:checked ~ .slideContents #slide5, #switch3:checked ~ .slideContents #slide1 {
+#switch3:checked ~ .slideContents #slide9, #switch3:checked ~ .slideContents #slide1 {
   transition-duration: 0s;
 }
 
@@ -177,12 +198,31 @@ input[name="slideshow-pc"] {
   transition-duration: 0s;
 }
 
+#switch6:checked ~ .slideContents #slide3, #switch6:checked ~ .slideContents #slide4 {
+  transition-duration: 0s;
+}
+
+#switch7:checked ~ .slideContents #slide4, #switch7:checked ~ .slideContents #slide5 {
+  transition-duration: 0s;
+}
+
+#switch8:checked ~ .slideContents #slide5, #switch8:checked ~ .slideContents #slide6 {
+  transition-duration: 0s;
+}
+
+#switch9:checked ~ .slideContents #slide6, #switch9:checked ~ .slideContents #slide7 {
+  transition-duration: 0s;
+}
+
 /* :::::: arrow mechanism :::::: */
 .arrow label {
   pointer-events: none;
 }
 
-#switch1:checked ~ .prev label[for="switch5"], #switch2:checked ~ .prev label[for="switch1"], #switch3:checked ~ .prev label[for="switch2"], #switch4:checked ~ .prev label[for="switch3"], #switch5:checked ~ .prev label[for="switch4"], #switch1:checked ~ .next label[for="switch2"], #switch2:checked ~ .next label[for="switch3"], #switch3:checked ~ .next label[for="switch4"], #switch4:checked ~ .next label[for="switch5"], #switch5:checked ~ .next label[for="switch1"] {
+#switch1:checked ~ .prev label[for="switch9"], #switch2:checked ~ .prev label[for="switch1"], #switch3:checked ~ .prev label[for="switch2"], #switch4:checked ~ .prev label[for="switch3"], #switch5:checked ~ .prev label[for="switch4"], #switch6:checked ~ .prev label[for="switch5"], #switch7:checked ~ .prev label[for="switch6"], #switch8:checked ~ .prev label[for="switch7"], #switch9:checked ~ .prev label[for="switch8"],
+
+#switch1:checked ~ .next label[for="switch2"], #switch2:checked ~ .next label[for="switch3"], #switch3:checked ~ .next label[for="switch4"], #switch4:checked ~ .next label[for="switch5"], #switch5:checked ~ .next label[for="switch6"], #switch6:checked ~ .next label[for="switch7"], #switch7:checked ~ .next label[for="switch8"], #switch8:checked ~ .next label[for="switch9"], #switch9:checked ~ .next label[for="switch1"]
+{
   pointer-events: auto;
 }
 
@@ -209,6 +249,8 @@ input[name="slideshow-sp"] {
   -webkit-user-select: none;
   user-select: none;
   transition: transform .6s;
+	max-height: 450px;
+  height: 120%;
 }
 
 .slideContents-sp section {
@@ -223,7 +265,7 @@ input[name="slideshow-sp"] {
 
 .slideContents-sp section .slide-image-wrap-sp {
   margin: 0 auto;
-  max-width: 400px;
+  max-width: 500px;
   height: 300px;
 }
 
@@ -310,16 +352,16 @@ input[name="slideshow-sp"] {
 }
 
 /* :::::: mechanism :::::: */
-#switch1-sp:checked ~ .slideContents-sp #slide1-sp, #switch2-sp:checked ~ .slideContents-sp #slide2-sp, #switch3-sp:checked ~ .slideContents-sp #slide3-sp, #switch4-sp:checked ~ .slideContents-sp #slide4-sp, #switch5-sp:checked ~ .slideContents-sp #slide5-sp {
+#switch1-sp:checked ~ .slideContents-sp #slide1-sp, #switch2-sp:checked ~ .slideContents-sp #slide2-sp, #switch3-sp:checked ~ .slideContents-sp #slide3-sp, #switch4-sp:checked ~ .slideContents-sp #slide4-sp, #switch5-sp:checked ~ .slideContents-sp #slide5-sp, #switch6-sp:checked ~ .slideContents-sp #slide6-sp, #switch7-sp:checked ~ .slideContents-sp #slide7-sp, #switch8-sp:checked ~ .slideContents-sp #slide8-sp, #switch9-sp:checked ~ .slideContents-sp #slide9-sp, #switch10-sp:checked ~ .slideContents-sp #slide10-sp,#switch11-sp:checked ~ .slideContents-sp #slide11-sp, #switch12-sp:checked ~ .slideContents-sp #slide12-sp, #switch13-sp:checked ~ .slideContents-sp #slide13-sp, #switch14-sp:checked ~ .slideContents-sp #slide14-sp, #switch15-sp:checked ~ .slideContents-sp #slide15-sp, #switch16-sp:checked ~ .slideContents-sp #slide16-sp, #switch17-sp:checked ~ .slideContents-sp #slide17-sp, #switch18-sp:checked ~ .slideContents-sp #slide18-sp, #switch19-sp:checked ~ .slideContents-sp #slide19-sp, #switch20-sp:checked ~ .slideContents-sp #slide20-sp, #switch21-sp:checked ~ .slideContents-sp #slide21-sp, #switch22-sp:checked ~ .slideContents-sp #slide22-sp, #switch23-sp:checked ~ .slideContents-sp #slide23-sp, #switch24-sp:checked ~ .slideContents-sp #slide24-sp, #switch25-sp:checked ~ .slideContents-sp #slide25-sp, #switch26-sp:checked ~ .slideContents-sp #slide26-sp, #switch27-sp:checked ~ .slideContents-sp #slide27-sp {
   position: relative;
   transform: none;
 }
 
-#switch1-sp:checked ~ .slideContents-sp #slide5-sp, #switch1-sp:checked ~ .slideContents-sp #slide4-sp {
+#switch1-sp:checked ~ .slideContents-sp #slide25-sp, #switch1-sp:checked ~ .slideContents-sp #slide24-sp {
   transform: translateX(-100%);
 }
 
-#switch2-sp:checked ~ .slideContents-sp #slide1-sp, #switch2-sp:checked ~ .slideContents-sp #slide5-sp {
+#switch2-sp:checked ~ .slideContents-sp #slide1-sp, #switch2-sp:checked ~ .slideContents-sp #slide25-sp {
   transform: translateX(-100%);
 }
 
@@ -335,6 +377,83 @@ input[name="slideshow-sp"] {
   transform: translateX(-100%);
 }
 
+#switch6-sp:checked ~ .slideContents-sp #slide5-sp, #switch6-sp:checked ~ .slideContents-sp #slide4-sp {
+  transform: translateX(-100%);
+}
+
+#switch7-sp:checked ~ .slideContents-sp #slide6-sp, #switch7-sp:checked ~ .slideContents-sp #slide5-sp {
+  transform: translateX(-100%);
+}
+
+#switch8-sp:checked ~ .slideContents-sp #slide7-sp, #switch8-sp:checked ~ .slideContents-sp #slide6-sp {
+  transform: translateX(-100%);
+}
+
+#switch9-sp:checked ~ .slideContents-sp #slide8-sp, #switch9-sp:checked ~ .slideContents-sp #slide7-sp {
+  transform: translateX(-100%);
+}
+
+#switch10-sp:checked ~ .slideContents-sp #slide9-sp, #switch10-sp:checked ~ .slideContents-sp #slide8-sp {
+  transform: translateX(-100%);
+}
+
+#switch11-sp:checked ~ .slideContents-sp #slide10-sp, #switch11-sp:checked ~ .slideContents-sp #slide9-sp {
+  transform: translateX(-100%);
+}
+
+#switch12-sp:checked ~ .slideContents-sp #slide11-sp, #switch12-sp:checked ~ .slideContents-sp #slide10-sp {
+  transform: translateX(-100%);
+}
+
+#switch13-sp:checked ~ .slideContents-sp #slide12-sp, #switch13-sp:checked ~ .slideContents-sp #slide11-sp {
+  transform: translateX(-100%);
+}
+
+#switch14-sp:checked ~ .slideContents-sp #slide13-sp, #switch14-sp:checked ~ .slideContents-sp #slide12-sp {
+  transform: translateX(-100%);
+}
+
+#switch15-sp:checked ~ .slideContents-sp #slide14-sp, #switch15-sp:checked ~ .slideContents-sp #slide13-sp {
+  transform: translateX(-100%);
+
+#switch16-sp:checked ~ .slideContents-sp #slide15-sp, #switch16-sp:checked ~ .slideContents-sp #slide14-sp {
+  transform: translateX(-100%);
+}
+
+#switch17-sp:checked ~ .slideContents-sp #slide16-sp, #switch17-sp:checked ~ .slideContents-sp #slide15-sp {
+  transform: translateX(-100%);
+}
+
+#switch18-sp:checked ~ .slideContents-sp #slide17-sp, #switch18-sp:checked ~ .slideContents-sp #slide16-sp {
+  transform: translateX(-100%);
+}
+
+#switch19-sp:checked ~ .slideContents-sp #slide18-sp, #switch19-sp:checked ~ .slideContents-sp #slide17-sp {
+  transform: translateX(-100%);
+}
+
+#switch20-sp:checked ~ .slideContents-sp #slide19-sp, #switch20-sp:checked ~ .slideContents-sp #slide18-sp {
+  transform: translateX(-100%);
+	
+#switch21-sp:checked ~ .slideContents-sp #slide20-sp, #switch21-sp:checked ~ .slideContents-sp #slide19-sp {
+  transform: translateX(-100%);
+}
+
+#switch22-sp:checked ~ .slideContents-sp #slide21-sp, #switch22-sp:checked ~ .slideContents-sp #slide20-sp {
+  transform: translateX(-100%);
+}
+
+#switch23-sp:checked ~ .slideContents-sp #slide22-sp, #switch23-sp:checked ~ .slideContents-sp #slide21-sp {
+  transform: translateX(-100%);
+}
+
+#switch24-sp:checked ~ .slideContents-sp #slide23-sp, #switch24-sp:checked ~ .slideContents-sp #slide22-sp {
+  transform: translateX(-100%);
+}
+
+#switch25-sp:checked ~ .slideContents-sp #slide24-sp, #switch25-sp:checked ~ .slideContents-sp #slide23-sp {
+  transform: translateX(-100%);
+	
 #switch1-sp:checked ~ .slideContents-sp #slide3-sp, #switch1-sp:checked ~ .slideContents-sp #slide4-sp {
   transition-duration: 0s;
 }
@@ -343,15 +462,91 @@ input[name="slideshow-sp"] {
   transition-duration: 0s;
 }
 
-#switch3-sp:checked ~ .slideContents-sp #slide5-sp, #switch3-sp:checked ~ .slideContents-sp #slide1-sp {
+#switch3-sp:checked ~ .slideContents-sp #slide5-sp, #switch3-sp:checked ~ .slideContents-sp #slide6-sp {
   transition-duration: 0s;
 }
 
-#switch4-sp:checked ~ .slideContents-sp #slide1-sp, #switch4-sp:checked ~ .slideContents-sp #slide2-sp {
+#switch4-sp:checked ~ .slideContents-sp #slide6-sp, #switch4-sp:checked ~ .slideContents-sp #slide7-sp {
   transition-duration: 0s;
 }
 
-#switch5-sp:checked ~ .slideContents-sp #slide2-sp, #switch5-sp:checked ~ .slideContents-sp #slide3-sp {
+#switch5-sp:checked ~ .slideContents-sp #slide7-sp, #switch5-sp:checked ~ .slideContents-sp #slide8-sp {
+  transition-duration: 0s;
+	
+#switch6-sp:checked ~ .slideContents-sp #slide8-sp, #switch6-sp:checked ~ .slideContents-sp #slide9-sp {
+  transition-duration: 0s;
+}
+
+#switch7-sp:checked ~ .slideContents-sp #slide9-sp, #switch7-sp:checked ~ .slideContents-sp #slide10-sp {
+  transition-duration: 0s;
+}
+
+#switch8-sp:checked ~ .slideContents-sp #slide10-sp, #switch8-sp:checked ~ .slideContents-sp #slide11-sp {
+  transition-duration: 0s;
+}
+
+#switch9-sp:checked ~ .slideContents-sp #slide11-sp, #switch9-sp:checked ~ .slideContents-sp #slide12-sp {
+  transition-duration: 0s;
+}
+
+#switch10-sp:checked ~ .slideContents-sp #slide12-sp, #switch10-sp:checked ~ .slideContents-sp #slide13-sp {
+  transition-duration: 0s;
+
+#switch11-sp:checked ~ .slideContents-sp #slide13-sp, #switch11-sp:checked ~ .slideContents-sp #slide14-sp {
+  transition-duration: 0s;
+}
+
+#switch12-sp:checked ~ .slideContents-sp #slide14-sp, #switch12-sp:checked ~ .slideContents-sp #slide15-sp {
+  transition-duration: 0s;
+}
+
+#switch13-sp:checked ~ .slideContents-sp #slide15-sp, #switch13-sp:checked ~ .slideContents-sp #slide16-sp {
+  transition-duration: 0s;
+}
+
+#switch14-sp:checked ~ .slideContents-sp #slide16-sp, #switch14-sp:checked ~ .slideContents-sp #slide17-sp {
+  transition-duration: 0s;
+}
+
+#switch15-sp:checked ~ .slideContents-sp #slide17-sp, #switch15-sp:checked ~ .slideContents-sp #slide18-sp {
+  transition-duration: 0s;
+	
+#switch16-sp:checked ~ .slideContents-sp #slide18-sp, #switch16-sp:checked ~ .slideContents-sp #slide19-sp {
+  transition-duration: 0s;
+}
+
+#switch17-sp:checked ~ .slideContents-sp #slide19-sp, #switch17-sp:checked ~ .slideContents-sp #slide20-sp {
+  transition-duration: 0s;
+}
+
+#switch18-sp:checked ~ .slideContents-sp #slide20-sp, #switch18-sp:checked ~ .slideContents-sp #slide21-sp {
+  transition-duration: 0s;
+}
+
+#switch19-sp:checked ~ .slideContents-sp #slide21-sp, #switch19-sp:checked ~ .slideContents-sp #slide22-sp {
+  transition-duration: 0s;
+}
+
+#switch20-sp:checked ~ .slideContents-sp #slide22-sp, #switch20-sp:checked ~ .slideContents-sp #slide23-sp {
+  transition-duration: 0s;
+	
+#switch21-sp:checked ~ .slideContents-sp #slide23-sp, #switch21-sp:checked ~ .slideContents-sp #slide24-sp {
+  transition-duration: 0s;
+}
+
+#switch22-sp:checked ~ .slideContents-sp #slide24-sp, #switch22-sp:checked ~ .slideContents-sp #slide25-sp {
+  transition-duration: 0s;
+}
+
+#switch23-sp:checked ~ .slideContents-sp #slide25-sp, #switch23-sp:checked ~ .slideContents-sp #slide1-sp {
+  transition-duration: 0s;
+}
+
+#switch24-sp:checked ~ .slideContents-sp #slide1-sp, #switch24-sp:checked ~ .slideContents-sp #slide2-sp {
+  transition-duration: 0s;
+}
+
+#switch25-sp:checked ~ .slideContents-sp #slide2-sp, #switch25-sp:checked ~ .slideContents-sp #slide3-sp {
   transition-duration: 0s;
 }
 
@@ -360,6 +555,12 @@ input[name="slideshow-sp"] {
   pointer-events: none;
 }
 
-#switch1-sp:checked ~ .prev label[for="switch5-sp"], #switch2-sp:checked ~ .prev-sp label[for="switch1-sp"], #switch3-sp:checked ~ .prev-sp label[for="switch2-sp"], #switch4-sp:checked ~ .prev-sp label[for="switch3-sp"], #switch5-sp:checked ~ .prev-sp label[for="switch4-sp"], #switch1-sp:checked ~ .next-sp label[for="switch2-sp"], #switch2-sp:checked ~ .next-sp label[for="switch3-sp"], #switch3-sp:checked ~ .next-sp label[for="switch4-sp"], #switch4-sp:checked ~ .next-sp label[for="switch5-sp"], #switch5-sp:checked ~ .next-sp label[for="switch1-sp"] {
+#switch1-sp:checked ~ .prev label[for="switch25-sp"], #switch2-sp:checked ~ .prev-sp label[for="switch1-sp"], #switch3-sp:checked ~ .prev-sp label[for="switch2-sp"], #switch4-sp:checked ~ .prev-sp label[for="switch3-sp"], #switch5-sp:checked ~ .prev-sp label[for="switch4-sp"],
+#switch6-sp:checked ~ .prev label[for="switch5-sp"], #switch7-sp:checked ~ .prev-sp label[for="switch6-sp"], #switch8-sp:checked ~ .prev-sp label[for="switch7-sp"], #switch9-sp:checked ~ .prev-sp label[for="switch8-sp"], #switch10-sp:checked ~ .prev-sp label[for="switch9-sp"],
+#switch11-sp:checked ~ .prev label[for="switch10-sp"], #switch12-sp:checked ~ .prev-sp label[for="switch11-sp"], #switch13-sp:checked ~ .prev-sp label[for="switch12-sp"], #switch14-sp:checked ~ .prev-sp label[for="switch13-sp"], #switch15-sp:checked ~ .prev-sp label[for="switch14-sp"],#switch16-sp:checked ~ .prev label[for="switch15-sp"], #switch17-sp:checked ~ .prev-sp label[for="switch16-sp"], #switch18-sp:checked ~ .prev-sp label[for="switch17-sp"], #switch19-sp:checked ~ .prev-sp label[for="switch18-sp"], #switch20-sp:checked ~ .prev-sp label[for="switch19-sp"],#switch21-sp:checked ~ .prev label[for="switch10-sp"], #switch22-sp:checked ~ .prev-sp label[for="switch21-sp"], #switch23-sp:checked ~ .prev-sp label[for="switch22-sp"], #switch24-sp:checked ~ .prev-sp label[for="switch23-sp"], #switch25-sp:checked ~ .prev-sp label[for="switch24-sp"],
+
+#switch1-sp:checked ~ .next-sp label[for="switch2-sp"], #switch2-sp:checked ~ .next-sp label[for="switch3-sp"], #switch3-sp:checked ~ .next-sp label[for="switch4-sp"], #switch4-sp:checked ~ .next-sp label[for="switch5-sp"], #switch5-sp:checked ~ .next-sp label[for="switch6-sp"],#switch6-sp:checked ~ .next-sp label[for="switch7-sp"], #switch7-sp:checked ~ .next-sp label[for="switch8-sp"], #switch8-sp:checked ~ .next-sp label[for="switch9-sp"], #switch9-sp:checked ~ .next-sp label[for="switch10-sp"], #switch10-sp:checked ~ .next-sp label[for="switch11-sp"], #switch11-sp:checked ~ .next-sp label[for="switch12-sp"], #switch12-sp:checked ~ .next-sp label[for="switch13-sp"], #switch13-sp:checked ~ .next-sp label[for="switch14-sp"], #switch14-sp:checked ~ .next-sp label[for="switch15-sp"], #switch15-sp:checked ~ .next-sp label[for="switch16-sp"],#switch16-sp:checked ~ .next-sp label[for="switch17-sp"], #switch17-sp:checked ~ .next-sp label[for="switch18-sp"], #switch18-sp:checked ~ .next-sp label[for="switch19-sp"], #switch19-sp:checked ~ .next-sp label[for="switch20-sp"], #switch20-sp:checked ~ .next-sp label[for="switch21-sp"], #switch21-sp:checked ~ .next-sp label[for="switch22-sp"], #switch22-sp:checked ~ .next-sp label[for="switch23-sp"], #switch23-sp:checked ~ .next-sp label[for="switch24-sp"], #switch24-sp:checked ~ .next-sp label[for="switch25-sp"], #switch25-sp:checked ~ .next-sp label[for="switch1-sp"] 
+
+{
   pointer-events: auto;
 }

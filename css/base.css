@@ -25,19 +25,22 @@ body {
     font-weight: bold;
 }
 
-
 #footer {
-	    padding: 30px 0;
- position: absolute;/*←絶対位置*/
+    padding: 80px 0;
+    position: absolute;/*←絶対位置*/
     bottom: 0; /*下に固定*/
-	    text-align: center;
-            left: 0;
-            background-color: #ffffff;
-            width: 100%;
-}
-
-          #footer .info { 
     text-align: center;
-	font-color="#222";
-            height: 50em; 
-          }
+    left: 0;
+    background-color: #ffffff;
+    width: 100%;
+}
+#footer .info { 
+    font-size: 13px;
+	line-height:3em;
+	color:#222;
+	padding:0 10px;
+}
+a:link {color:#222; text-decoration:none;} /*未訪問のリンクの色*/
+a:visited {color:#222;} /*訪問済みのリンクの色*/
+a:hover {color:#eee; } /*カーソルが乗っているリンクの色*/
+a:active {color:#eee;} /*クリック中のリンクの色*/
