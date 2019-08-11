@@ -7,6 +7,15 @@ body {
 #main {
 	    margin: 0 auto;
 	    text-align: center;
+
+}
+
+h2 .main{
+	text-align: center;
+	font-size:22px;
+	color:#222;
+	line-height:1.75;
+	font-weight:bold;
 }
 
 .about_title {

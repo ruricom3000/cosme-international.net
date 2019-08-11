@@ -59,6 +59,7 @@ input[name="slideshow-pc"] {
 }
 
 .slideContents ul .slide-image-wrap .slide-image-text {
+	  text-align: center;
     line-height: 1.7;
 	font-size: 16px;
 }
@@ -136,7 +137,15 @@ input[name="slideshow-pc"] {
 }
 
 /* :::::: mechanism :::::: */
-#switch1:checked ~ .slideContents #slide1, #switch2:checked ~ .slideContents #slide2, #switch3:checked ~ .slideContents #slide3, #switch4:checked ~ .slideContents #slide4, #switch5:checked ~ .slideContents #slide5, #switch6:checked ~ .slideContents #slide6, #switch7:checked ~ .slideContents #slide7, #switch8:checked ~ .slideContents #slide8, #switch9:checked ~ .slideContents #slide9 {
+#switch1:checked ~ .slideContents #slide1,
+#switch2:checked ~ .slideContents #slide2, 
+#switch3:checked ~ .slideContents #slide3, 
+#switch4:checked ~ .slideContents #slide4, 
+#switch5:checked ~ .slideContents #slide5, 
+#switch6:checked ~ .slideContents #slide6, 
+#switch7:checked ~ .slideContents #slide7, 
+#switch8:checked ~ .slideContents #slide8, 
+#switch9:checked ~ .slideContents #slide9 {
   position: relative;
   transform: none;
 }
@@ -255,7 +264,7 @@ input[name="slideshow-pc"] {
   .slideshow-sp {
     display: none;
   }
-
+}
 
 input[name="slideshow-sp"] {
   display: none;
