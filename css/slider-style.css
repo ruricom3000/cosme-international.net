@@ -249,8 +249,8 @@ input[name="slideshow-sp"] {
   -webkit-user-select: none;
   user-select: none;
   transition: transform .6s;
-	max-height: 500px;
-  height: 150%;
+	max-height: 600px;
+  height: 170%;
 }
 
 .slideContents-sp section {
@@ -266,7 +266,7 @@ input[name="slideshow-sp"] {
 .slideContents-sp section .slide-image-wrap-sp {
   margin: 0 auto;
   max-width: 400px;
-  height: 400px;
+  height: 500px;
 }
 
 .slideContents-sp section .slide-image-wrap-sp img {
