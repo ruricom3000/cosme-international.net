@@ -4,6 +4,11 @@ body {
 		"ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
+#main {
+	    margin: 0 auto;
+	    text-align: center;
+}
+
 /*Company*/
 .company_container {
     margin: 0 auto;
