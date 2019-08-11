@@ -16,13 +16,32 @@ body {
 .main_copy {
 	padding-top:20px;
 	text-align: center;
-	font-size:24px;
+	font-size:20px;
 	color:#444;
 	line-height:1.75;
 	font-weight:bold;
-    font-size: calc(1.6rem + ((1vw - 0.64rem) * 2.1429));/* 24px~36pxで可変*/
+    font-size: calc(1.6rem + ((1vw - 0.64rem) * 1.6));/* 24px~36pxで可変*/
 }
 
+@media (min-width: 1200px) {/* 1200px以上*/
+    h1 {
+        font-size: 2.4rem;/* 24px*/
+    }
+    h2 {
+        font-size: 1.8rem;/* 18px*/
+    }
+}
+@media screen and (max-width: 640px) {/* 640px以下*/
+    body{
+    line-height: 2;
+    }
+    h1{
+        font-size: 2.4rem;/* 24px*/
+    }
+    h2 {
+        font-size: 2rem;/* 20px*/
+    }
+}
 
 .about_wrap {
 		    margin: 0 auto;
@@ -30,6 +49,7 @@ body {
 }
 
 .about_title {
+	padding-top:10px;
 	text-align:center;
 	font-size: 18px;
 	line-height:30px;
