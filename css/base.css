@@ -9,22 +9,21 @@ body {
 	    text-align: center;
 }
 
-.about {
-	    text-align: left;
-	    display: block;   /* インラインブロック化 */
-    margin-bottom: 7px; /* 外側に余白を追加(※右に3px・下に7px) */
-}
-
 .about_title {
 	text-align: center;
 	font-size: 18px;
 	line-height:30px;
 }
 
+.about {
+	    text-align: left;
+	    display: block;   /* インラインブロック化 */
+}
+
 .about_text {
     text-align: left;
     font-size: 14px;
-    padding-bottom: 10px;
+    padding: 10px 0  10px 0;
 	color:#222;
 	line-height:1.2;
 }
