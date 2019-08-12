@@ -3,8 +3,8 @@ body {
 }
 
 .logo {
-	width:120%;
-	height:120%;
+	width:158px;
+	height:789x;
 }
 
 .high {
@@ -16,24 +16,24 @@ width:100%;
 padding-top: 50%;
 text-align: center;
 background: #222;
-	background-image: url("../image/bg_2.jpg") ;
+	background-position: center center;
+	background-image: url("../image/bg_2_sp.jpg") ;
 	background-size:cover;
 	margin-bottom:15px;
 }
 
 .main_copy {
-	padding-top:20px;
+	padding-top:18px;
 	text-align: center;
 	font-size:24px;
 	color:#444;
 	line-height:1.75;
 	font-weight:bold;
-
 }
 
 @media (min-width: 1200px) {/* 1200px以上*/
     h1 {
-        font-size: 2.4rem;/* 24px*/
+        font-size: 2.2rem;/* 24px*/
     }
     h2 {
         font-size: 1.8rem;/* 18px*/
@@ -43,6 +43,12 @@ background: #222;
 .about_wrap {
 		    margin: 0 auto;
 		text-align:center;
+}
+
+.about_image {
+width:80%;
+max-width: 80%;
+height: auto;
 }
 
 .about_title {

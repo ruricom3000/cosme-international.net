@@ -40,6 +40,12 @@ background: #222;
 		text-align:center;
 }
 
+.about_image {
+width:100%;
+max-width: 100%;
+height: auto;
+}
+
 .about_title {
 	padding-top:10px;
 	text-align:center;
@@ -66,3 +72,30 @@ background: #222;
   overflow-wrap: break-word;
 }
 
+
+  #pageTop {
+	  	padding-top: 6px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  #pageTop i {
+  	padding-top: 6px 
+  }
+  #pageTop a {
+    display: block;
+    z-index: 999;
+    padding: 8px;
+    border-radius: 30px;
+    width: 35px;
+    height: 35px;
+    background-color: #444444;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+  }
+  #pageTop a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+  }

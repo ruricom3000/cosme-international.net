@@ -2,8 +2,6 @@ body {
 
 }
 
-
-
 .about_wrap {
 		    margin: 0 auto;
 		text-align:center;
@@ -76,30 +74,3 @@ a:link {color:#222; text-decoration:none;} /*未訪問のリンクの色*/
 a:visited {color:#222;} /*訪問済みのリンクの色*/
 a:hover {color:#eee; } /*カーソルが乗っているリンクの色*/
 a:active {color:#eee;} /*クリック中のリンクの色*/
-
-  #pageTop {
-	  	padding-top: 6px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-  }
-  #pageTop i {
-  	padding-top: 6px 
-  }
-  #pageTop a {
-    display: block;
-    z-index: 999;
-    padding: 8px;
-    border-radius: 30px;
-    width: 35px;
-    height: 35px;
-    background-color: #444444;
-    color: #fff;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-  }
-  #pageTop a:hover {
-    text-decoration: none;
-    opacity: 0.7;
-  }
