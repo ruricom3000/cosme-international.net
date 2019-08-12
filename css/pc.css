@@ -18,7 +18,11 @@ body {
 
 
 .high {
-	padding:80px 0 0 0;
+	padding:80px 0 30px; 0;
+}
+
+.category{
+	padding:30px;
 }
 
 .main_visual {
@@ -34,7 +38,7 @@ background: #222;
 .main_copy {
 	padding-top:20px;
 	text-align: center;
-	font-size:20px;
+	font-size:22px;
 	color:#444;
 	line-height:1.75;
 	font-weight:bold;
