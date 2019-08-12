@@ -3,8 +3,9 @@ body {
 }
 
 .logo {
-	width:100%;
-	height:100%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
 }
 
 .high {
