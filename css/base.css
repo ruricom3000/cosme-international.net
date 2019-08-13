@@ -1,42 +1,10 @@
 body {
-  text-align:center; /*ページ全体を中央揃えにする*/
-		color:#222;
-		position: relative;
-	font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-	font-weight: 500;
-color:#630;
-line-height:25px;
-font-size:0.95em;
 }
 
-h1, h2, nav, ul {
-	font-family:"Julius Sans One";
-}
-
-
-
-h1 a {
-    position: absolute;
-    left: 10px;
-}
-
-
-#wrapper{
-	max-width : 1000px;
-	  position: relative;
-   width: 100%;
-  text-align: left;   /*全体を左揃えにする*/
-		margin: 0 auto;
-	padding:10px;
-}
-
-.logo_navi {
-		    display: flex;  
-}
 
 .about_wrap {
-	width: 23.5%;
-	text-align:center;
+		    margin: 0 auto;
+		text-align:center;
 }
 
 .about_title {
@@ -58,6 +26,7 @@ h1 a {
     text-align: left;
     font-size: 14px;
     margin: 10px 0 10px 0;
+	color:#222;
 	line-height:1.8;
 	  word-break: break-all;
   line-break: normal;
@@ -68,8 +37,6 @@ h1 a {
 /*Company*/
 .company_container {
     margin: 0 auto;
-	width: 53.3%;
-	line-height:1.5;
 }
 .company_detail {
     border-collapse: collapse;
@@ -88,54 +55,13 @@ h1 a {
     font-weight: bold;
 }
 
-.button {
-margin:20px 0; 
-  display: inline-block;
-  width: 240px;
-  height: 60px;
-  text-align: center;
-  text-decoration: none;
-  line-height: 60px;
-  outline: none;
-	  background-color: #444;
-  border: 2px solid #444;
-  color: #fff;
-	font-size:16px;
-
-}
-
-.button:hover {
-  background-color: #fff;
-  border-color: #444;
-  color: #444;
-}
-.button::before,
-.button::after {
-  position: absolute;
-  z-index: -1;
-  display: block;
-  content: '';
-}
-.button,
-.button::before,
-.button::after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-.map-wrapper {
-	width: 44.69%;
-	height: 500px;
-}
-
 #footer {
-    padding: 200px 0 70px 0;
+    padding: 80px 0;
+    position: absolute;/*←絶対位置*/
     bottom: 0; /*下に固定*/
     text-align: center;
     left: 0;
+    background-color: #ffffff;
     width: 100%;
 }
 #footer .info { 
@@ -144,8 +70,7 @@ margin:20px 0;
 	color:#222;
 	padding:0 10px;
 }
-#footer .info a:link {color:#222; text-decoration:none;} /*未訪問のリンクの色*/
-#footer .info a:visited {color:#222;} /*訪問済みのリンクの色*/
-#footer .info a:hover {color:#999; } /*カーソルが乗っているリンクの色*/
-#footer .info a:active {color:#999;} /*クリック中のリンクの色*/
-
+a:link {color:#222; text-decoration:none;} /*未訪問のリンクの色*/
+a:visited {color:#222;} /*訪問済みのリンクの色*/
+a:hover {color:#eee; } /*カーソルが乗っているリンクの色*/
+a:active {color:#eee;} /*クリック中のリンクの色*/
