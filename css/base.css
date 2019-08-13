@@ -13,10 +13,7 @@ h1, h2, nav, ul {
 	font-family:"Julius Sans One";
 }
 
-header {
-    text-align: right;
-	height:80px;
-}
+
 
 h1 a {
     position: absolute;
